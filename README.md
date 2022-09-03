@@ -99,5 +99,6 @@ To generate latent features for molecules from arbitrary datasets using the pre-
 Modify --dataset to specify the target dataset.
 
 
-
+## License
+KPGT is licensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0.
 
