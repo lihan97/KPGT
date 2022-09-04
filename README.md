@@ -2,7 +2,7 @@
 ## About
 This repository contains the code and resources of the following paper:
 
-KPGT: Knowledge-Guided Pre-training of Graph Transformer for Molecular Property Prediction (accepted to KDD 2022).
+KPGT: Knowledge-Guided Pre-training of Graph Transformer for Molecular Property Prediction (accepted to KDD 2022). DOI:[https://doi.org/10.1145/3534678.3539426](https://doi.org/10.1145/3534678.3539426).
 
 ## Overview of the Framework
 KPGT is a novel self-supervised learning framework for the representation learning of molecular graphs, consisting of a novel graph transformer architecture, LiGhT, and a knowledge-guided pre-training strategy.
