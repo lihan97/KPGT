@@ -98,8 +98,9 @@ To generate latent features for molecules from arbitrary datasets using the pre-
 
 Modify --dataset to specify the target dataset.
 
-## Sources
+## Resources
 Baseline methods: https://figshare.com/s/43e2dc41648f4d934c1a
+
 Datasets: https://figshare.com/s/aee05cc329434b629c82
 
 ## License
