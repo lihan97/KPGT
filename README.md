@@ -72,6 +72,8 @@ Fine-tune pre-trained model on a specific downstream task:
 
 Weight decay, dropout and lr are tunable hyper-parameters.
 
+You can activate the fine-tuning strategies using the following flags: --use_flag, --use_llrd, --use_l2sp, and --use_reinit. Each strategy has tunable hyperparameters, which are detailed in the code.
+
 ## **Evaluation**
 
 Due to the non-deterministic function in PyTorch, it is hard to exactly reproduce the fine-tuning results. Therefore, we provide the fine-tuned model for eleven datasets under the transfer learning setting, to guarantee the reproducibility of the test results reported in our paper.
@@ -90,13 +92,34 @@ Then the results can be reproduced by:
 
 The dataset, split and model can be specified using parameters --dataset, --split and --model_path, respectively. 
 
-## **Generate latent features for arbitrary datasets**
+## **Generate latent features for your datasets**
 
 To generate latent features for molecules from arbitrary datasets using the pre-trained KPGT:
 
     python extract_features.py --config base --model_path ../models/pretrained/base/base.pth --data_path ../datasets/ --dataset bace
 
 Modify --dataset to specify the target dataset.
+
+## Citation
+
+@article{li2023knowledge,
+  title={A knowledge-guided pre-training framework for improving molecular representation learning},
+  author={Li, Han and Zhang, Ruotian and Min, Yaosen and Ma, Dacheng and Zhao, Dan and Zeng, Jianyang},
+  journal={Nature Communications},
+  volume={14},
+  number={1},
+  pages={7568},
+  year={2023},
+  publisher={Nature Publishing Group UK London}
+}
+
+@inproceedings{li2022kpgt,
+  title={KPGT: knowledge-guided pre-training of graph transformer for molecular property prediction},
+  author={Li, Han and Zhao, Dan and Zeng, Jianyang},
+  booktitle={Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+  pages={857--867},
+  year={2022}
+}
 
 ## Resources
 Baseline methods: https://figshare.com/s/43e2dc41648f4d934c1a
