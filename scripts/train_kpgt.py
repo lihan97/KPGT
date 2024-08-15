@@ -91,7 +91,7 @@ if __name__ == '__main__':
     trainer.fit(model, train_loader)
     if local_rank == 0:
         summary_writer.close()
-
+    torch.distributed.destroy_process_group()
     
     
 
