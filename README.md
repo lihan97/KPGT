@@ -94,6 +94,14 @@ The dataset, split and model can be specified using parameters --dataset, --spli
 
 ## **Generate latent features for your datasets**
 
+### Step 1: Prepare dataset
+
+Construct molecular line graphs and extract the molecular descriptors and the fingerprints from SMILES in a downstream dataset (e.g., bace):
+
+    python preprocess_downstream_dataset.py --data_path ../datasets/ --dataset bace 
+
+### Step 2: Finetune
+
 To generate latent features for molecules from arbitrary datasets using the pre-trained KPGT:
 
     python extract_features.py --config base --model_path ../models/pretrained/base/base.pth --data_path ../datasets/ --dataset bace
